@@ -1,0 +1,4 @@
+Privat Key => Public Key (public Address) 
+Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
+    => Digital Signature (public) sent to network for validation
+to check transactions: digital signature + public key {in BlockChain program}

@@ -1,6 +1,5 @@
 Comprendre les bitCoins:  
 ---------------------
-
 1)- Creer une Adresse Bitcoin: 
    *) Portefeuille de bitcoins: genere Cle Public, Private & adress Bitcoin. 
    *) A partir de la Cle publique a travers un processus de Hachage cryptographique: 
@@ -28,11 +27,10 @@ Comprendre les bitCoins:
                     Alice va inclure le montant de bitcoin present ds l'output0 (transaction precedente 0) 
                     Alice va fermer l'output1 grace au Cadenas "PubKey Script" Cree avec l'adresse
        envoie au reseau: Alice va envoyer la transaction sur le reseau bitcoin pour valider si le code utilise par Alice 
-                  (Signature script) peut debloquer l'ancien Pubkeyscript afin d+ la trx a la blockChain pour que Bob puisse y acceder. 
-                        
-                        
-    Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
-    => Digital Signature (public) sent to network for validation
-to check transactions: digital signature + public key {in BlockChain program}
-every new transaction => input to the Bloc with many ancient trxs 
+                  (Signature script/Digital Signature) peut debloquer l'ancien Pubkeyscript afin d+ la trx a la blockChain pour que Bob puisse y acceder. 
+  
+  3)- Validation et envoi de la Transaction:                       
+
+
+
 every bloc contain the hash code of ancient bloc.(we can't modify a bloc without altering the actual hash code, which will be different in the next bloc hash code.

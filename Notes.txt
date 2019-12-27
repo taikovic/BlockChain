@@ -1,4 +1,6 @@
-Privat Key => Public Key (public Address) 
+Privat Key {ECDSA}=> Public Key {double hashing} => public Address
 Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
     => Digital Signature (public) sent to network for validation
 to check transactions: digital signature + public key {in BlockChain program}
+every new transaction => input to the Bloc with many ancient trxs 
+every bloc contain the hash code of ancient bloc.(we can't modify a bloc without altering the actual hash code, which will be different in the next bloc hash code.

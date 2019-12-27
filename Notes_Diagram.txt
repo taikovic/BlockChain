@@ -15,8 +15,8 @@ Comprendre les bitCoins:
         Bob va prouver que la transaction lui a bien ete destinee avec sa Cle Private.(droit de depenser a activer avec)
         Alice prend l'adresse bitcoin => public key hash (private + public key of Bob) => creation: PubKeyScript 
           (Cadenas a ouvrir uniquement avec private key) 
-        Bob genere: PubKeyScript + private/public key => Signature script (digital signature)  pour depenser le bitcoin donc 
-                  pour la nouvelle transaction. 
+        Bob genere digital signature avec: 
+          PubKeyScript + private key => Signature script pour depenser le bitcoin donc pour la nouvelle transaction. 
                   
    *) Recap des taches : 
        Transaction 1 a Creer par Alice ss condition une trx existante: 

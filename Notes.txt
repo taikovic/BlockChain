@@ -4,3 +4,39 @@ Transaction (created within my address) + Signed with my Private Key {in Blockch
 to check transactions: digital signature + public key {in BlockChain program}
 every new transaction => input to the Bloc with many ancient trxs 
 every bloc contain the hash code of ancient bloc.(we can't modify a bloc without altering the actual hash code, which will be different in the next bloc hash code.
+-----------------------------------------------------------------------------------
+B- Definitions: 
+
+1) fonctions de hachage:
+-------------------------
+
+sha256: groupe les inputs d'une certaine taille, les compresse pour donner un output avec une taille 128-512 bits;
+caracteristique: 
+- Compression d'output.
+- resistance aux collisions: Injectivite de la fonction: f(x)=f(y) => x=y; et bijectivite meme;
+- pre-image resistant: impossible de trouver la valeur input a partir de la valeur de sortie (f -1: la fct inverse est difficile a trouver)
+(seulement la force brut: essayer tte les valeurs d'input, # en contradiction avec proof-of-work;
+*) Algo de Hachage: 
+    1 step: 2 X DataBlock + mathematical hash function => Hash value; 
+    2 step: Hash value (un des deux blocs) & Data block pour la sequence suivante; 
+*) Algo example: SHA-256:used by ASIC (by mining pool), but cf. 51% Attackl (Application Specific Integrated Circuits)
+                    X11: used in DASHCOIN, more secure than SHA-256, no ASIC usage; organise 11 chaine d'algos de hashage differents
+                        no usage of ASIC as they are specific to only 1! hash function; 
+ 
+ 2) Proof-of-Work: POW
+ ----------------------
+ *) permet aux mineurs de dire au reste du reseau: 
+    " regardez, j'ai utilise bcp de capacites de calculs, plein de materiels et plein d'energie au service du reseau, la preuve
+    j'ai obtenu le resultat de la 'preuve du travail' donc mntnt je peux ajouter le bloc recuperer la recompense qui va 
+    va payer pour tous ces frais."
+ *) pb de consommation d'energie(comme le pays d'Irlande): juste pour dire qui doit ajouter le bloc et gagner.
+    Solution: Proof-of-Stake || Delegated-Proof-of-Stake: preuve de l'enjeu: 
+ 
+ 
+ 3) proof of stake:Preuve de l'enjeu:
+ ------------------------------------
+ 
+ 
+ 
+ 
+                    

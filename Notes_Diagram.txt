@@ -1,5 +1,14 @@
-Privat Key {ECDSA}=> Public Key {double hashing} => public Address
-Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
+Comprendre les bitCoins:  
+---------------------
+
+1)- Creer une Adresse Bitcoin: 
+   *) A partir de la Cle publique a travers un processus de Hachage cryptographique: 
+                 Privat Key {ECDSA}=> Public Key {double hashing: SHA-256 & RIPEMD160} => 
+                                        Public Key Hash {encrypted: Base58Check System} => public bitcoin Address
+   *) Recevoir des bitcoins: Public Key /\ Depenser les bitcoins: Private Key.
+   
+   
+    Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
     => Digital Signature (public) sent to network for validation
 to check transactions: digital signature + public key {in BlockChain program}
 every new transaction => input to the Bloc with many ancient trxs 

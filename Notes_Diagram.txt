@@ -7,8 +7,30 @@ Comprendre les bitCoins:
                  Privat Key {ECDSA}=> Public Key {double hashing: SHA-256 & RIPEMD160} => 
                                         Public Key Hash {encrypted: Base58Check System} => public bitcoin Address
    *) Recevoir des bitcoins: Public Key /\ Depenser les bitcoins: Private Key.
-   
-   
+    example: faisons une parallele: numero de carte bancaire (cle publique) & Code secret (cle Private)
+
+2)- Creer les transactions:    
+    *)  Alice souhaite transferer un bitcoin a Bob (tous deux ont: pair cle public/private, adress bitcoin) 
+        Bob transmet a Alice sa cle Public encodee sous forme de Adress bitcoin. 
+        Alice (son portefeuille:program bitcoin) va inclure les infos(adress bitcoin) de Bob dans sa transaction qu'elle va creer.
+        Bob va prouver que la transaction lui a bien ete destinee avec sa Cle Private.(droit de depenser a activer avec)
+        Alice prend l'adresse bitcoin => public key hash (private + public key of Bob) => creation: PubKeyScript 
+          (Cadenas a ouvrir uniquement avec private key) 
+        Bob genere: PubKeyScript + private/public key => Signature script (digital signature)  pour depenser le bitcoin donc 
+                  pour la nouvelle transaction. 
+                  
+   *) Recap des taches : 
+       Transaction 1 a Creer par Alice ss condition une trx existante: 
+       cote Input1: Alice va creer la "Signature script1" avec ses propres Private/Public Keys.
+                   Alice debloque par la meme occasion, le PubKeyScript0 de la transaction precedente 0 qui lui a ete destinee, 
+                      car cree avec son adress bitcoin.
+       Cote Ouput1: Alice va creer le nouveau output1. 
+                    Alice va inclure le montant de bitcoin present ds l'output0 (transaction precedente 0) 
+                    Alice va fermer l'output1 grace au Cadenas "PubKey Script" Cree avec l'adresse
+       envoie au reseau: Alice va envoyer la transaction sur le reseau bitcoin pour valider si le code utilise par Alice 
+                  (Signature script) peut debloquer l'ancien Pubkeyscript afin d+ la trx a la blockChain pour que Bob puisse y acceder. 
+                        
+                        
     Transaction (created within my address) + Signed with my Private Key {in Blockchain program}
     => Digital Signature (public) sent to network for validation
 to check transactions: digital signature + public key {in BlockChain program}

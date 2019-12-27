@@ -32,6 +32,6 @@ Comprendre les bitCoins:
   3)- Validation et envoi de la Transaction:                       
       *) avec le minage: chaque Bloc est ajoute chaque 10 mns; 
       *) le mineur verifie si les trxs envoyes sont valides;
-      *) calcule le hashage du Header de ce bloc avec le POW
+      *) calcule le hashage du Header de ce bloc avec le POW (bloc: header + body (merkle tree))
       *) si Accepte par le reseau, le mineur ajoute le bloc a la blockChain et obtient sa recompense (coinbase + frais)
 every bloc contain the hash code of ancient bloc.(we can't modify a bloc without altering the actual hash code, which will be different in the next bloc hash code.

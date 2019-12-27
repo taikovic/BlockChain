@@ -15,7 +15,8 @@ caracteristique:
 *) Algo example: SHA-256:used by ASIC (by mining pool), but cf. 51% Attackl (Application Specific Integrated Circuits)
                     X11: used in DASHCOIN, more secure than SHA-256, no ASIC usage; organise 11 chaine d'algos de hashage differents
                         no usage of ASIC as they are specific to only 1! hash function; 
- 
+ *) Mntnt voir le systeme de consensus: la validite et l'ordre des trx:
+ Pow, PoS, DPoS, Byzantine fault tolerant systems, Tangle
  2) Proof-of-Work: POW
  ----------------------
  *) permet aux mineurs de dire au reste du reseau: 
@@ -28,9 +29,13 @@ caracteristique:
  
  3) proof of stake:Preuve de l'enjeu:
  ------------------------------------
- 
- 
- 
- 
+ *) demontrer qu'on possede un certain nombre d'argent ou de jetons ds le reseau;
+ le minteur: combine l'identifiant de dernier bloc ajoute a la chain + avec sa Public Key => numero aleatoire 
+            multiplie de numero aleatoire x nombre de jetons acquis x nombre de secondes depuis le dernier bloc ajoutee a la chaine = value
+            si value > limit => le minteur est autorise a creer le bloc. 
+            
+ *) un pb se pose: la valeur des coins valides avec PoS, n'est pas implicite ou ne vaut rien (Nothing at Stake)  rien a perdre
+    le pb de fork aussi se pose et on peut aller avec les deux branches (car ca ne coute rien, meme avec groupe).
+  
  
                     
